@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "work" -L "unisims_ver" -L "unimacro_ver" -L "secureip" -L "xpm" --snapshot "huffman_encoder_tb_behav" "work.huffman_encoder_tb" "work.glbl" -log "elaborate.log" 

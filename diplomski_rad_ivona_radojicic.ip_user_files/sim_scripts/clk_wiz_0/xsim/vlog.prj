@@ -1,0 +1,8 @@
+verilog work --include "../../../ipstatic" \
+"../../../../diplomski_rad_ivona_radojicic.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" \
+"../../../../diplomski_rad_ivona_radojicic.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v" \
+
+verilog work "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,18 @@
+# compile vhdl design source files
+vhdl work  \
+"../../../../diplomski_rad_ivona_radojicic.srcs/sources_1/new/RAM_definitons_PK.vhd" \
+"../../../../diplomski_rad_ivona_radojicic.srcs/sources_1/new/huffman_bram.vhd" \
+"../../../../diplomski_rad_ivona_radojicic.srcs/sources_1/new/canonical_code_generate.vhd" \
+"../../../../diplomski_rad_ivona_radojicic.srcs/sources_1/new/cells.vhd" \
+"../../../../diplomski_rad_ivona_radojicic.srcs/sources_1/new/edge_detector.vhd" \
+"../../../../diplomski_rad_ivona_radojicic.srcs/sources_1/new/histogram_generate.vhd" \
+"../../../../diplomski_rad_ivona_radojicic.srcs/sources_1/new/sorting_module.vhd" \
+"../../../../diplomski_rad_ivona_radojicic.srcs/sources_1/new/tree_generate.vhd" \
+"../../../../diplomski_rad_ivona_radojicic.srcs/sources_1/new/text_file.vhd" \
+"../../../../diplomski_rad_ivona_radojicic.srcs/sources_1/new/length_generate.vhd" \
+"../../../../diplomski_rad_ivona_radojicic.srcs/sources_1/new/uart_tx.vhd" \
+"../../../../diplomski_rad_ivona_radojicic.srcs/sources_1/new/huffman_encoder.vhd" \
+"../../../../diplomski_rad_ivona_radojicic.srcs/sim_1/new/huffman_encoder_tb.vhd" \
+
+# Do not sort compile order
+nosort

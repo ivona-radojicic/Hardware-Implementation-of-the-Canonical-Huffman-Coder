@@ -1,0 +1,450 @@
+
+*** Running vivado
+    with args -log huffman_encoder.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source huffman_encoder.tcl
+
+
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Thu Sep 24 00:53:13 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source huffman_encoder.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 491.508 ; gain = 200.672
+Command: read_checkpoint -auto_incremental -incremental C:/Users/radoj/Documents/diplomski_rad_ivona_radojicic/diplomski_rad_ivona_radojicic.srcs/utils_1/imports/synth_1/huffman_encoder.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/radoj/Documents/diplomski_rad_ivona_radojicic/diplomski_rad_ivona_radojicic.srcs/utils_1/imports/synth_1/huffman_encoder.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top huffman_encoder -part xc7z020clg400-1 -flatten_hierarchy none -directive RuntimeOptimized -fsm_extraction off
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Device 21-9227] Part: xc7z020clg400-1 does not have CEAM library.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 14544
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1381.559 ; gain = 447.715
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'huffman_encoder' [C:/Users/radoj/Documents/diplomski_rad_ivona_radojicic/diplomski_rad_ivona_radojicic.srcs/sources_1/new/huffman_encoder.vhd:19]
+INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'C:/Users/radoj/Documents/diplomski_rad_ivona_radojicic/diplomski_rad_ivona_radojicic.runs/synth_1/.Xil/Vivado-10968-racopc/realtime/clk_wiz_0_stub.vhdl:6' bound to instance 'CLOCK_WIZ_INST' of component 'clk_wiz_0' [C:/Users/radoj/Documents/diplomski_rad_ivona_radojicic/diplomski_rad_ivona_radojicic.srcs/sources_1/new/huffman_encoder.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/radoj/Documents/diplomski_rad_ivona_radojicic/diplomski_rad_ivona_radojicic.runs/synth_1/.Xil/Vivado-10968-racopc/realtime/clk_wiz_0_stub.vhdl:16]
+INFO: [Synth 8-638] synthesizing module 'tree_generate' [C:/Users/radoj/Documents/diplomski_rad_ivona_radojicic/diplomski_rad_ivona_radojicic.srcs/sources_1/new/tree_generate.vhd:23]
+	Parameter num_cells bound to: 256 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'sorting_module' [C:/Users/radoj/Documents/diplomski_rad_ivona_radojicic/diplomski_rad_ivona_radojicic.srcs/sources_1/new/sorting_module.vhd:25]
+	Parameter num_cells bound to: 256 - type: integer 
+	Parameter freq_bw bound to: 14 - type: integer 
+	Parameter symbol_bw bound to: 8 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'cells' [C:/Users/radoj/Documents/diplomski_rad_ivona_radojicic/diplomski_rad_ivona_radojicic.srcs/sources_1/new/cells.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'cells' (0#1) [C:/Users/radoj/Documents/diplomski_rad_ivona_radojicic/diplomski_rad_ivona_radojicic.srcs/sources_1/new/cells.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'sorting_module' (0#1) [C:/Users/radoj/Documents/diplomski_rad_ivona_radojicic/diplomski_rad_ivona_radojicic.srcs/sources_1/new/sorting_module.vhd:25]
+INFO: [Synth 8-638] synthesizing module 'huffman_bram' [C:/Users/radoj/Documents/diplomski_rad_ivona_radojicic/diplomski_rad_ivona_radojicic.srcs/sources_1/new/huffman_bram.vhd:28]
+	Parameter G_RAM_WIDTH bound to: 9 - type: integer 
+	Parameter G_RAM_DEPTH bound to: 256 - type: integer 
+	Parameter G_RAM_PERFORMANCE bound to: LOW_LATENCY - type: string 
+	Parameter G_RAM_INIT_FILE bound to: (null) - type: string 
+INFO: [Synth 8-256] done synthesizing module 'huffman_bram' (0#1) [C:/Users/radoj/Documents/diplomski_rad_ivona_radojicic/diplomski_rad_ivona_radojicic.srcs/sources_1/new/huffman_bram.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'tree_generate' (0#1) [C:/Users/radoj/Documents/diplomski_rad_ivona_radojicic/diplomski_rad_ivona_radojicic.srcs/sources_1/new/tree_generate.vhd:23]
+INFO: [Synth 8-638] synthesizing module 'text_file' [C:/Users/radoj/Documents/diplomski_rad_ivona_radojicic/diplomski_rad_ivona_radojicic.srcs/sources_1/new/text_file.vhd:23]
+	Parameter G_ROM_DEPTH bound to: 5000 - type: integer 
+	Parameter G_INIT_FILE bound to: C:/Users/radoj/OneDrive/Desktop/huffman/rom_init.txt - type: string 
+INFO: [Synth 8-256] done synthesizing module 'text_file' (0#1) [C:/Users/radoj/Documents/diplomski_rad_ivona_radojicic/diplomski_rad_ivona_radojicic.srcs/sources_1/new/text_file.vhd:23]
+INFO: [Synth 8-638] synthesizing module 'length_generate' [C:/Users/radoj/Documents/diplomski_rad_ivona_radojicic/diplomski_rad_ivona_radojicic.srcs/sources_1/new/length_generate.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'huffman_bram__parameterized0' [C:/Users/radoj/Documents/diplomski_rad_ivona_radojicic/diplomski_rad_ivona_radojicic.srcs/sources_1/new/huffman_bram.vhd:28]
+	Parameter G_RAM_WIDTH bound to: 8 - type: integer 
+	Parameter G_RAM_DEPTH bound to: 256 - type: integer 
+	Parameter G_RAM_PERFORMANCE bound to: LOW_LATENCY - type: string 
+	Parameter G_RAM_INIT_FILE bound to: (null) - type: string 
+INFO: [Synth 8-256] done synthesizing module 'huffman_bram__parameterized0' (0#1) [C:/Users/radoj/Documents/diplomski_rad_ivona_radojicic/diplomski_rad_ivona_radojicic.srcs/sources_1/new/huffman_bram.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'length_generate' (0#1) [C:/Users/radoj/Documents/diplomski_rad_ivona_radojicic/diplomski_rad_ivona_radojicic.srcs/sources_1/new/length_generate.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'histogram_generate' [C:/Users/radoj/Documents/diplomski_rad_ivona_radojicic/diplomski_rad_ivona_radojicic.srcs/sources_1/new/histogram_generate.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'histogram_generate' (0#1) [C:/Users/radoj/Documents/diplomski_rad_ivona_radojicic/diplomski_rad_ivona_radojicic.srcs/sources_1/new/histogram_generate.vhd:22]
+INFO: [Synth 8-638] synthesizing module 'canonical_code_generate' [C:/Users/radoj/Documents/diplomski_rad_ivona_radojicic/diplomski_rad_ivona_radojicic.srcs/sources_1/new/canonical_code_generate.vhd:25]
+INFO: [Synth 8-638] synthesizing module 'huffman_bram__parameterized1' [C:/Users/radoj/Documents/diplomski_rad_ivona_radojicic/diplomski_rad_ivona_radojicic.srcs/sources_1/new/huffman_bram.vhd:28]
+	Parameter G_RAM_WIDTH bound to: 24 - type: integer 
+	Parameter G_RAM_DEPTH bound to: 256 - type: integer 
+	Parameter G_RAM_PERFORMANCE bound to: LOW_LATENCY - type: string 
+	Parameter G_RAM_INIT_FILE bound to: (null) - type: string 
+INFO: [Synth 8-256] done synthesizing module 'huffman_bram__parameterized1' (0#1) [C:/Users/radoj/Documents/diplomski_rad_ivona_radojicic/diplomski_rad_ivona_radojicic.srcs/sources_1/new/huffman_bram.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'canonical_code_generate' (0#1) [C:/Users/radoj/Documents/diplomski_rad_ivona_radojicic/diplomski_rad_ivona_radojicic.srcs/sources_1/new/canonical_code_generate.vhd:25]
+INFO: [Synth 8-638] synthesizing module 'edge_detector' [C:/Users/radoj/Documents/diplomski_rad_ivona_radojicic/diplomski_rad_ivona_radojicic.srcs/sources_1/new/edge_detector.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'edge_detector' (0#1) [C:/Users/radoj/Documents/diplomski_rad_ivona_radojicic/diplomski_rad_ivona_radojicic.srcs/sources_1/new/edge_detector.vhd:15]
+INFO: [Synth 8-638] synthesizing module 'uart_tx' [C:/Users/radoj/Documents/diplomski_rad_ivona_radojicic/diplomski_rad_ivona_radojicic.srcs/sources_1/new/uart_tx.vhd:27]
+	Parameter CLK_FREQ bound to: 40 - type: integer 
+	Parameter SER_FREQ bound to: 115200 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'uart_tx' (0#1) [C:/Users/radoj/Documents/diplomski_rad_ivona_radojicic/diplomski_rad_ivona_radojicic.srcs/sources_1/new/uart_tx.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'huffman_encoder' (0#1) [C:/Users/radoj/Documents/diplomski_rad_ivona_radojicic/diplomski_rad_ivona_radojicic.srcs/sources_1/new/huffman_encoder.vhd:19]
+WARNING: [Synth 8-4767] Trying to implement RAM 'fifo_depth_even_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Invalid write to RAM. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "fifo_depth_even_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'fifo_depth_odd_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Invalid write to RAM. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "fifo_depth_odd_reg" dissolved into registers
+WARNING: [Synth 8-7129] Port rstb in module huffman_bram__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port regceb in module huffman_bram__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rstb in module huffman_bram__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port regceb in module huffman_bram__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rstb in module huffman_bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port regceb in module huffman_bram is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1692.523 ; gain = 758.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 1692.523 ; gain = 758.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 1692.523 ; gain = 758.680
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1692.523 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/radoj/Documents/diplomski_rad_ivona_radojicic/diplomski_rad_ivona_radojicic.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'CLOCK_WIZ_INST'
+Finished Parsing XDC File [c:/Users/radoj/Documents/diplomski_rad_ivona_radojicic/diplomski_rad_ivona_radojicic.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'CLOCK_WIZ_INST'
+Parsing XDC File [C:/Users/radoj/Documents/diplomski_rad_ivona_radojicic/diplomski_rad_ivona_radojicic.srcs/constrs_1/new/arty_constraints.xdc]
+Finished Parsing XDC File [C:/Users/radoj/Documents/diplomski_rad_ivona_radojicic/diplomski_rad_ivona_radojicic.srcs/constrs_1/new/arty_constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/radoj/Documents/diplomski_rad_ivona_radojicic/diplomski_rad_ivona_radojicic.srcs/constrs_1/new/arty_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/huffman_encoder_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/huffman_encoder_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1795.793 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.479 . Memory (MB): peak = 1795.793 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:43 ; elapsed = 00:01:02 . Memory (MB): peak = 1795.793 ; gain = 861.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:43 ; elapsed = 00:01:02 . Memory (MB): peak = 1795.793 ; gain = 861.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  c:/Users/radoj/Documents/diplomski_rad_ivona_radojicic/diplomski_rad_ivona_radojicic.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  c:/Users/radoj/Documents/diplomski_rad_ivona_radojicic/diplomski_rad_ivona_radojicic.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for CLOCK_WIZ_INST. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:43 ; elapsed = 00:01:02 . Memory (MB): peak = 1795.793 ; gain = 861.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:46 ; elapsed = 00:01:05 . Memory (MB): peak = 1795.793 ; gain = 861.949
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6702] IncrSynth : Over 50% of partitions are impacted by design changes. Reverting to default synthesis
+WARNING: [Synth 8-6702] IncrSynth : Reverting to default synthesis
+huffman_encoder__GCB1huffman_encoder__GCB0---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:48 ; elapsed = 00:01:07 . Memory (MB): peak = 1795.793 ; gain = 861.949
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6040] Register addr_cnt_reg_rep driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+WARNING: [Synth 8-6014] Unused sequential element len_addra0 was removed.  [C:/Users/radoj/Documents/diplomski_rad_ivona_radojicic/diplomski_rad_ivona_radojicic.srcs/sources_1/new/length_generate.vhd:102]
+WARNING: [Synth 8-6014] Unused sequential element len_addra0_rep was removed.  [C:/Users/radoj/Documents/diplomski_rad_ivona_radojicic/diplomski_rad_ivona_radojicic.srcs/sources_1/new/length_generate.vhd:102]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:12 ; elapsed = 00:01:38 . Memory (MB): peak = 1795.793 ; gain = 861.949
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: no
+
+   Reason for not running incremental synthesis : Change is too high
+
+
+INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input   15 Bit       Adders := 1     
+	   2 Input   14 Bit       Adders := 2     
+	   2 Input   13 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 12    
+	   2 Input    8 Bit       Adders := 11    
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               24 Bit    Registers := 2     
+	               16 Bit    Registers := 18    
+	               14 Bit    Registers := 512   
+	               13 Bit    Registers := 2     
+	                9 Bit    Registers := 10    
+	                8 Bit    Registers := 786   
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 26    
++---RAMs : 
+	               6K Bit	(256 X 24 bit)          RAMs := 1     
+	               2K Bit	(256 X 9 bit)          RAMs := 3     
+	               2K Bit	(256 X 8 bit)          RAMs := 4     
+	             1024 Bit	(128 X 8 bit)          RAMs := 2     
++---ROMs : 
+	                    ROMs := 1     
++---Muxes : 
+	   2 Input 1024 Bit        Muxes := 1     
+	   2 Input  256 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 69    
+	   2 Input   14 Bit        Muxes := 266   
+	   2 Input   13 Bit        Muxes := 2     
+	   2 Input    9 Bit        Muxes := 14    
+	   3 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 792   
+	   6 Input    8 Bit        Muxes := 1     
+	   3 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 3     
+	   6 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 6     
+	   3 Input    2 Bit        Muxes := 1     
+	   5 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 1163  
+	   4 Input    1 Bit        Muxes := 1     
+	   6 Input    1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM ram_name_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM ram_name_reg to conserve power
+INFO: [Synth 8-3886] merging instance 'i_ptr_reg_rep[0]' (FDRE) to 'i_ptr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'i_ptr_reg_rep[1]' (FDRE) to 'i_ptr_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_ptr_reg_rep[2]' (FDRE) to 'i_ptr_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_ptr_reg_rep[3]' (FDRE) to 'i_ptr_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_ptr_reg_rep[4]' (FDRE) to 'i_ptr_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_ptr_reg_rep[5]' (FDRE) to 'i_ptr_reg[5]'
+INFO: [Synth 8-3886] merging instance 'i_ptr_reg_rep[6]' (FDRE) to 'i_ptr_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_ptr_reg_rep[7]' (FDRE) to 'i_ptr_reg[7]'
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM ram_name_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM ram_name_reg to conserve power
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (CANONICAL_CODE_GENERATE_INST/\r_code_reg[0] )
+INFO: [Synth 8-3886] merging instance 'TEXT_FILE_INST/addr_cnt_reg_rep[0]' (FDRE) to 'TEXT_FILE_INST/addr_cnt_reg[0]'
+INFO: [Synth 8-3886] merging instance 'TEXT_FILE_INST/addr_cnt_reg_rep[1]' (FDRE) to 'TEXT_FILE_INST/addr_cnt_reg[1]'
+INFO: [Synth 8-3886] merging instance 'TEXT_FILE_INST/addr_cnt_reg_rep[2]' (FDRE) to 'TEXT_FILE_INST/addr_cnt_reg[2]'
+INFO: [Synth 8-3886] merging instance 'TEXT_FILE_INST/addr_cnt_reg_rep[3]' (FDRE) to 'TEXT_FILE_INST/addr_cnt_reg[3]'
+INFO: [Synth 8-3886] merging instance 'TEXT_FILE_INST/addr_cnt_reg_rep[4]' (FDRE) to 'TEXT_FILE_INST/addr_cnt_reg[4]'
+INFO: [Synth 8-3886] merging instance 'TEXT_FILE_INST/addr_cnt_reg_rep[5]' (FDRE) to 'TEXT_FILE_INST/addr_cnt_reg[5]'
+INFO: [Synth 8-3886] merging instance 'TEXT_FILE_INST/addr_cnt_reg_rep[6]' (FDRE) to 'TEXT_FILE_INST/addr_cnt_reg[6]'
+INFO: [Synth 8-3886] merging instance 'TEXT_FILE_INST/addr_cnt_reg_rep[7]' (FDRE) to 'TEXT_FILE_INST/addr_cnt_reg[7]'
+INFO: [Synth 8-3886] merging instance 'TEXT_FILE_INST/addr_cnt_reg_rep[8]' (FDRE) to 'TEXT_FILE_INST/addr_cnt_reg[8]'
+INFO: [Synth 8-3886] merging instance 'TEXT_FILE_INST/addr_cnt_reg_rep[9]' (FDRE) to 'TEXT_FILE_INST/addr_cnt_reg[9]'
+INFO: [Synth 8-3886] merging instance 'TEXT_FILE_INST/addr_cnt_reg_rep[10]' (FDRE) to 'TEXT_FILE_INST/addr_cnt_reg[10]'
+INFO: [Synth 8-3886] merging instance 'TEXT_FILE_INST/addr_cnt_reg_rep[11]' (FDRE) to 'TEXT_FILE_INST/addr_cnt_reg[11]'
+INFO: [Synth 8-3886] merging instance 'TEXT_FILE_INST/addr_cnt_reg_rep[12]' (FDRE) to 'TEXT_FILE_INST/addr_cnt_reg[12]'
+INFO: [Synth 8-3886] merging instance 'CANONICAL_CODE_GENERATE_INST/next_code_reg[0][0]' (FDE) to 'CANONICAL_CODE_GENERATE_INST/next_code_reg[0][15]'
+INFO: [Synth 8-3886] merging instance 'CANONICAL_CODE_GENERATE_INST/next_code_reg[0][1]' (FDE) to 'CANONICAL_CODE_GENERATE_INST/next_code_reg[0][15]'
+INFO: [Synth 8-3886] merging instance 'CANONICAL_CODE_GENERATE_INST/next_code_reg[0][2]' (FDE) to 'CANONICAL_CODE_GENERATE_INST/next_code_reg[0][15]'
+INFO: [Synth 8-3886] merging instance 'CANONICAL_CODE_GENERATE_INST/next_code_reg[0][3]' (FDE) to 'CANONICAL_CODE_GENERATE_INST/next_code_reg[0][15]'
+INFO: [Synth 8-3886] merging instance 'CANONICAL_CODE_GENERATE_INST/next_code_reg[0][4]' (FDE) to 'CANONICAL_CODE_GENERATE_INST/next_code_reg[0][15]'
+INFO: [Synth 8-3886] merging instance 'CANONICAL_CODE_GENERATE_INST/next_code_reg[0][5]' (FDE) to 'CANONICAL_CODE_GENERATE_INST/next_code_reg[0][15]'
+INFO: [Synth 8-3886] merging instance 'CANONICAL_CODE_GENERATE_INST/next_code_reg[0][6]' (FDE) to 'CANONICAL_CODE_GENERATE_INST/next_code_reg[0][15]'
+INFO: [Synth 8-3886] merging instance 'CANONICAL_CODE_GENERATE_INST/next_code_reg[0][7]' (FDE) to 'CANONICAL_CODE_GENERATE_INST/next_code_reg[0][15]'
+INFO: [Synth 8-3886] merging instance 'CANONICAL_CODE_GENERATE_INST/next_code_reg[0][8]' (FDE) to 'CANONICAL_CODE_GENERATE_INST/next_code_reg[0][15]'
+INFO: [Synth 8-3886] merging instance 'CANONICAL_CODE_GENERATE_INST/next_code_reg[0][9]' (FDE) to 'CANONICAL_CODE_GENERATE_INST/next_code_reg[0][15]'
+INFO: [Synth 8-3886] merging instance 'CANONICAL_CODE_GENERATE_INST/next_code_reg[0][10]' (FDE) to 'CANONICAL_CODE_GENERATE_INST/next_code_reg[0][15]'
+INFO: [Synth 8-3886] merging instance 'CANONICAL_CODE_GENERATE_INST/next_code_reg[0][11]' (FDE) to 'CANONICAL_CODE_GENERATE_INST/next_code_reg[0][15]'
+INFO: [Synth 8-3886] merging instance 'CANONICAL_CODE_GENERATE_INST/next_code_reg[0][12]' (FDE) to 'CANONICAL_CODE_GENERATE_INST/next_code_reg[0][15]'
+INFO: [Synth 8-3886] merging instance 'CANONICAL_CODE_GENERATE_INST/next_code_reg[0][13]' (FDE) to 'CANONICAL_CODE_GENERATE_INST/next_code_reg[0][15]'
+INFO: [Synth 8-3886] merging instance 'CANONICAL_CODE_GENERATE_INST/next_code_reg[0][14]' (FDE) to 'CANONICAL_CODE_GENERATE_INST/next_code_reg[0][15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (CANONICAL_CODE_GENERATE_INST/\next_code_reg[0][15] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:11:08 ; elapsed = 00:13:05 . Memory (MB): peak = 1795.793 ; gain = 861.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++---------------------------------------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                                  | RTL Object   | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------------------------------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|LEFT_CHILD                                   | ram_name_reg | 256 x 9(READ_FIRST)    | W |   | 256 x 9(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|RIGHT_CHILD                                  | ram_name_reg | 256 x 9(READ_FIRST)    | W |   | 256 x 9(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|LENGTH_GENERATE_INST/LENGTH_BRAM             | ram_name_reg | 256 x 8(READ_FIRST)    | W |   | 256 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|HISTOGRAM_GENERATE_INST/HISTOGRAM_BRAM       | ram_name_reg | 256 x 8(READ_FIRST)    | W |   | 256 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|CANONICAL_CODE_GENERATE_INST/DICTIONARY_BRAM | ram_name_reg | 256 x 24(READ_FIRST)   | W |   | 256 x 24(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
++---------------------------------------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++---------------------+--------------------+-----------+----------------------+--------------+
+|Module Name          | RTL Object         | Inference | Size (Depth x Width) | Primitives   | 
++---------------------+--------------------+-----------+----------------------+--------------+
+|tree_generate__GC0   | i_id_reg           | Implied   | 256 x 9              | RAM64M x 24  | 
+|LENGTH_GENERATE_INST | stack_addr_reg     | Implied   | 256 x 8              | RAM64M x 12  | 
+|LENGTH_GENERATE_INST | fifo_addr_even_reg | Implied   | 128 x 8              | RAM64M x 12  | 
+|LENGTH_GENERATE_INST | fifo_addr_odd_reg  | Implied   | 128 x 8              | RAM64M x 6   | 
+|LENGTH_GENERATE_INST | stack_depth_reg    | Implied   | 256 x 8              | RAM64M x 12  | 
++---------------------+--------------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:11:22 ; elapsed = 00:13:20 . Memory (MB): peak = 1795.793 ; gain = 861.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++---------------------------------------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                                  | RTL Object   | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------------------------------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|LEFT_CHILD                                   | ram_name_reg | 256 x 9(READ_FIRST)    | W |   | 256 x 9(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|RIGHT_CHILD                                  | ram_name_reg | 256 x 9(READ_FIRST)    | W |   | 256 x 9(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|LENGTH_GENERATE_INST/LENGTH_BRAM             | ram_name_reg | 256 x 8(READ_FIRST)    | W |   | 256 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|HISTOGRAM_GENERATE_INST/HISTOGRAM_BRAM       | ram_name_reg | 256 x 8(READ_FIRST)    | W |   | 256 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|CANONICAL_CODE_GENERATE_INST/DICTIONARY_BRAM | ram_name_reg | 256 x 24(READ_FIRST)   | W |   | 256 x 24(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
++---------------------------------------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping Report
++---------------------+--------------------+-----------+----------------------+--------------+
+|Module Name          | RTL Object         | Inference | Size (Depth x Width) | Primitives   | 
++---------------------+--------------------+-----------+----------------------+--------------+
+|tree_generate__GC0   | i_id_reg           | Implied   | 256 x 9              | RAM64M x 24  | 
+|LENGTH_GENERATE_INST | stack_addr_reg     | Implied   | 256 x 8              | RAM64M x 12  | 
+|LENGTH_GENERATE_INST | fifo_addr_even_reg | Implied   | 128 x 8              | RAM64M x 12  | 
+|LENGTH_GENERATE_INST | fifo_addr_odd_reg  | Implied   | 128 x 8              | RAM64M x 6   | 
+|LENGTH_GENERATE_INST | stack_depth_reg    | Implied   | 256 x 8              | RAM64M x 12  | 
++---------------------+--------------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance TREE_GENERATE_INST/i_0/LEFT_CHILD/ram_name_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance TREE_GENERATE_INST/i_0/RIGHT_CHILD/ram_name_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/LENGTH_GENERATE_INST/LENGTH_BRAM/ram_name_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/HISTOGRAM_GENERATE_INST/HISTOGRAM_BRAM/ram_name_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/CANONICAL_CODE_GENERATE_INST/DICTIONARY_BRAM/ram_name_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:12:41 ; elapsed = 00:15:14 . Memory (MB): peak = 3487.375 ; gain = 2553.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:13:03 ; elapsed = 00:15:37 . Memory (MB): peak = 3487.375 ; gain = 2553.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:13:04 ; elapsed = 00:15:37 . Memory (MB): peak = 3487.375 ; gain = 2553.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:13:04 ; elapsed = 00:15:38 . Memory (MB): peak = 3487.375 ; gain = 2553.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |clk_wiz_0_bbox |     1|
+|2     |CARRY4         |   802|
+|3     |LUT1           |   276|
+|4     |LUT2           |  2527|
+|5     |LUT3           |  6782|
+|6     |LUT4           |  4551|
+|7     |LUT5           |  1788|
+|8     |LUT6           | 12524|
+|9     |MUXF7          |  2836|
+|10    |MUXF8          |  1287|
+|11    |RAM64M         |    66|
+|12    |RAMB18E1       |     5|
+|14    |RAMB36E1       |     2|
+|16    |FDRE           |  9624|
+|17    |FDSE           |  4378|
+|18    |IBUF           |     2|
+|19    |OBUF           |     2|
++------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:13:05 ; elapsed = 00:15:38 . Memory (MB): peak = 3487.375 ; gain = 2553.531
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:12:34 ; elapsed = 00:15:13 . Memory (MB): peak = 3487.375 ; gain = 2450.262
+Synthesis Optimization Complete : Time (s): cpu = 00:13:05 ; elapsed = 00:15:42 . Memory (MB): peak = 3487.375 ; gain = 2553.531
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.655 . Memory (MB): peak = 3487.375 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4998 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 3487.375 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 66 instances were transformed.
+  RAM64M => RAM64M (RAMD64E(x4)): 66 instances
+
+Synth Design complete | Checksum: bc156c71
+INFO: [Common 17-83] Releasing license: Synthesis
+94 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:13:28 ; elapsed = 00:16:17 . Memory (MB): peak = 3487.375 ; gain = 2979.293
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.266 . Memory (MB): peak = 3487.375 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/radoj/Documents/diplomski_rad_ivona_radojicic/diplomski_rad_ivona_radojicic.runs/synth_1/huffman_encoder.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 3487.375 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_utilization -file huffman_encoder_utilization_synth.rpt -pb huffman_encoder_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 24 01:09:54 2026...

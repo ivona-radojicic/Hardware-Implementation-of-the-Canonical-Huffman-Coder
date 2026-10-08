@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog work  --include "../../../../diplomski_rad_ivona_radojicic.ip_user_files/ipstatic" \
+"../../../../diplomski_rad_ivona_radojicic.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" \
+"../../../../diplomski_rad_ivona_radojicic.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v" \
+
+# compile glbl module
+verilog work "glbl.v"
+
+# Do not sort compile order
+nosort
